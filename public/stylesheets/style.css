@@ -16,7 +16,7 @@ a {
 	width: 25%;
 	height: 330px;
 	text-align: left;
-	overflow: scroll; 
+	overflow: auto; 
 }
 
 
