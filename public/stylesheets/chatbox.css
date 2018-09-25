@@ -24,6 +24,7 @@ nav{
 
 .display{
   height: 80%;
+  overflow: auto;
 }
 
 .input{

@@ -10,10 +10,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheets/chatbox.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="javascripts/sockets/socket.io.js"></script>
+  <script src="http://localhost:3001/socket.io/socket.io.js"></script>
 </head>
 <body>
-    <script src="/socket.io/socket.io.js"></script>
   <div class="container">
     <div class="row container">
       <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -28,14 +27,14 @@
     <div class="chatbox container">
       <div id="display" class="display"></div>
       <div class="row misc">
-        <textarea class="input" rows="8" cols="80"></textarea>
+        <textarea id="input" class="input" rows="8" cols="80"></textarea>
         <div class="button">
-          <p onselectstart="return false">Send</p>
+          <p onclick="send()" onselectstart="return false">Send</p>
         </div>
       </div>
     </div>
   </div>
-  <script src="../socket.io/socket.io.js"></script>
+
   <script type="text/javascript" src="javascripts/chatbox.js"></script>
 </body>
 </html>
